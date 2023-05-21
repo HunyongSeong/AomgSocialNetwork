@@ -16,5 +16,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData()) // 이런부분 왜 필요한지.
     }
 }
